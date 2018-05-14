@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HinhAnh" Class="CONNECTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-42SHU0A;Initial Catalog=HinhAnh;Integrated Security=True" SettingsObjectName="Picture_Viewer.Properties.Settings" SettingsPropertyName="HinhAnhConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Album" Member="Albums">
+    <Type Name="Album">
+      <Column Name="MaAlbum" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenAlbum" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HinhAnh" Member="HinhAnhs">
+    <Type Name="HinhAnh">
+      <Column Name="DuongDan" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenHinh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MaTheLoai" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MaAlbum" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TheLoai" Member="TheLoais">
+    <Type Name="TheLoai">
+      <Column Name="MaTheLoai" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTheLoai" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
